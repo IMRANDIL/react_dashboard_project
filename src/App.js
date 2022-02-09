@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css';
+import Navbar from './components/navbar/Navbar';
 
 
 
@@ -21,6 +22,7 @@ const App = () => {
 
   return (
     <div className="container">
+      <Navbar sideBarOpen={sidebarOpen} openSideBar={openSideBar} />
       <h1>React Dashboard</h1>
     </div>
   );
