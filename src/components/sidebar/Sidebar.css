@@ -18,11 +18,22 @@
 .sidebar__img{
     display: flex;
     align-items: center;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    
 }
+
+
+
+
+
 
 .sidebar__title > div > img{
     width: 75px;
     object-fit: contain;
+  
+    
 }
 
 .sidebar__title > div > h1 {
@@ -77,4 +88,33 @@
 margin-top: 20px;
 padding: 10px;
 color: #e65061;
+}
+
+.sidebar__logout > a{
+    text-decoration: none;
+    color: #e65061;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sidebar__logout > i{
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.sidebar__responsive{
+    display: inline !important;
+    z-index: 9999 !important;
+    left: 0 !important;
+    position: absolute;
+}
+
+@media screen and (max-width:978px){
+    #sidebar{
+        display: none;
+    }
+
+    .sidebar__title > i{
+        display: inline;
+    }
 }
