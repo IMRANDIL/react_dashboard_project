@@ -2,7 +2,7 @@ import React from 'react';
 import './Sidebar.css';
 import logo from '../../assets/logo.png'
 
-const Sidebar = ({ sidebarOpen, closeSidebar }) => {
+const Sidebar = ({ sidebarOpen, closeSideBar }) => {
     return (
         <div className={sidebarOpen ? 'sidebar-responsive' : ''} id='sidebar'>
             <div className="sidebar__title">
@@ -10,7 +10,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                     <img src={logo} alt="logo" />
                     <h1>Passionate</h1>
                 </div>
-                <i className='fa fa-times' id='sidebarIcon' onClick={() => closeSidebar()}></i>
+                <i className='fa fa-times' id='sidebarIcon' onClick={() => closeSideBar()}></i>
             </div>
             <div className="sidebar__menu">
                 <div className='sidebar__link active_menu_link'>
